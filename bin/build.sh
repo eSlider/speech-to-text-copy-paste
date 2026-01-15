@@ -46,6 +46,9 @@ cp "$PROJECT_ROOT/test-xdotool.sh" "$APPDIR_PATH/usr/bin/"
 # Copy desktop file
 cp "$PROJECT_ROOT/speech-to-text-agent.desktop" "$APPDIR_PATH/usr/share/applications/"
 
+# Copy icon to root of AppDir for AppImage
+cp "$APPDIR_PATH/usr/share/icons/hicolor/256x256/apps/speech-to-text-agent.svg" "$APPDIR_PATH/speech-to-text-agent.png"
+
 # Copy requirements and setup scripts
 cp "$PROJECT_ROOT/requirements.txt" "$APPDIR_PATH/usr/bin/"
 cp "$PROJECT_ROOT/setup.sh" "$APPDIR_PATH/usr/bin/"
