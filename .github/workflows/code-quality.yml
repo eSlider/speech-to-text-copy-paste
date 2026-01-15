@@ -49,20 +49,18 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       
-    - name: Run Bandit security scan
-      uses: PyCQA/bandit-action@v1
-      with:
-        config_file: .bandit.yaml
-      continue-on-error: true
-        
-    - name: Create bandit config if not exists
+    - name: Create bandit config
       run: |
-        if [ ! -f .bandit.yaml ]; then
-          cat > .bandit.yaml << 'EOF'
+        cat > .bandit.yaml << 'EOF'
         exclude_dirs:
           - tests
         tests:
           - B101: assert_used
           - B601: shell_injection_process
         EOF
-        fi
+        
+    - name: Run Bandit security scan
+      uses: PyCQA/bandit-action@v1
+      with:
+        config_file: .bandit.yaml
+      continue-on-error: true
