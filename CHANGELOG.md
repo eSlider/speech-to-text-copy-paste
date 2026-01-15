@@ -1,10 +1,10 @@
-# 📋 Changelog
+# Changelog
 
 All notable changes to the Speech-to-Text Agent project will be documented in this file.
 
-## 🔥 [0.1.0] - 2025-01-15 - Initial Release
+## [0.1.0] - 2025-01-15 - Initial Release
 
-### ✨ Major Features Added 🎉
+### Major Features Added
 
 #### **Core Speech-to-Text Functionality**
 - **Real-time speech recognition** using VOSK engine (offline, privacy-focused)
@@ -14,8 +14,8 @@ All notable changes to the Speech-to-Text Agent project will be documented in th
 
 #### **User Interface & Experience**
 - **Recording status button** with dynamic visual feedback:
-  - 🎤 Green when ready to record
-  - ⏹️ Red with pulsing animation when recording
+  - Green when ready to record
+  - Red with pulsing animation when recording
   - Smooth transitions and hover effects
 - **Real-time status display** showing:
   - Current recording state
@@ -52,7 +52,7 @@ All notable changes to the Speech-to-Text Agent project will be documented in th
 - **Requirements.txt** for Python dependency management
 - **Test scripts** for functionality verification
 
-### 🛠️ Technical Implementation
+### Technical Implementation
 
 #### **Architecture**
 - **Modular design** with separate concerns (UI, audio, STT, input)
@@ -75,7 +75,7 @@ All notable changes to the Speech-to-Text Agent project will be documented in th
 - **Efficient memory usage** with proper cleanup
 - **Smart text handling** to prevent UI freezing
 
-### ⚠️ Known Issues & Limitations
+### Known Issues & Limitations
 
 #### **Platform Dependencies**
 - **Global hotkey support** (Keybinder) may not be available on all Ubuntu versions
@@ -91,7 +91,7 @@ All notable changes to the Speech-to-Text Agent project will be documented in th
 - **No configuration GUI** (all settings handled via scripts)
 - **No custom hotkey support** (uses Ctrl+Alt+R when available)
 
-### 📦 Installation & Quick Start
+### Installation & Quick Start
 
 #### **One-Command Setup**
 ```bash
@@ -117,7 +117,7 @@ cd models && wget https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.1
 unzip vosk-model-small-en-us-0.15.zip
 ```
 
-### 🚀 Usage Instructions
+### Usage Instructions
 
 1. **Launch application** via desktop menu or `./launch.sh`
 2. **Click "Start Recording"** button (or use Ctrl+Alt+R if available)
@@ -125,7 +125,7 @@ unzip vosk-model-small-en-us-0.15.zip
 4. **Click "Stop Recording"** when finished
 5. **Text automatically types** into your previous application
 
-### 🔄 Future Roadmap
+### Future Roadmap
 
 See [TODO.md](TODO.md) for planned features including:
 - Multi-language support
@@ -137,7 +137,7 @@ See [TODO.md](TODO.md) for planned features including:
 
 ---
 
-## 📊 Project Statistics
+## Project Statistics
 
 - **Version**: 0.1.0 Alpha
 - **Development Time**: Initial development cycle

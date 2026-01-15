@@ -2,7 +2,7 @@
 
 ## Project Status
 
-### Completed ✅
+### Completed
 - [x] Research and choose STT engine (VOSK vs Coqui STT)
 - [x] Design GTK app architecture with recording status button
 - [x] Create main application structure with GTK UI
@@ -11,7 +11,7 @@
 - [x] Setup global hotkey framework with Keybinder
 - [x] Integrate xdotool for text input simulation
 
-### Completed ✅
+### Completed
 - [x] Setup project structure and dependencies
 - [x] Initialize VOSK STT model and audio capture
 - [x] Test audio recording functionality
@@ -25,12 +25,12 @@
 - [x] Add desktop entry for easy access
 - [x] Improve text queuing and delayed typing
 
-### In Progress 🔄
+### In Progress
 - [ ] Test global hotkey functionality with alternative approach
 - [ ] Test across different applications
 - [ ] Fine-tune window positioning and focus management
 
-### Pending ⏳
+### Pending
 - [ ] Package for Ubuntu GNOME deployment
 - [ ] Create system integration for global hotkeys
 - [ ] Add configuration dialog for settings

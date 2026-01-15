@@ -1,0 +1,68 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  lint:
+    name: Code Linting
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install linting tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pylint black mypy
+        
+    - name: Run flake8
+      run: |
+        flake8 main.py --max-line-length=100 --ignore=E501,W503 || echo "flake8 issues found"
+        
+    - name: Run pylint
+      run: |
+        pylint main.py --disable=C0114,C0115,C0116 || echo "pylint issues found"
+        
+    - name: Check code formatting with black
+      run: |
+        black --check --line-length=100 main.py || echo "black formatting issues found"
+        
+    - name: Check shell scripts
+      run: |
+        shellcheck *.sh || echo "shellcheck not available or issues found"
+
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Run Bandit security scan
+      uses: PyCQA/bandit-action@v1
+      with:
+        config_file: .bandit.yaml
+      continue-on-error: true
+        
+    - name: Create bandit config if not exists
+      run: |
+        if [ ! -f .bandit.yaml ]; then
+          cat > .bandit.yaml << 'EOF'
+        exclude_dirs:
+          - tests
+        tests:
+          - B101: assert_used
+          - B601: shell_injection_process
+        EOF
+        fi

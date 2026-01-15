@@ -1,20 +1,27 @@
 # Speech-to-Text Agent
 
+![Build Status](https://github.com/eSlider/speech-to-text-copy-paste/workflows/Build%20and%20Release/badge.svg)
+![Release](https://img.shields.io/github/v/release/eSlider/speech-to-text-copy-paste)
+![License](https://img.shields.io/github/license/eSlider/speech-to-text-copy-paste)
+![Platform](https://img.shields.io/badge/platform-Uuntu%2018.04%2B-blue)
+![Python](https://img.shields.io/badge/python-3.6%2B-blue)
+![GTK](https://img.shields.io/badge/GTK-3.0%2B-blue)
+
 A GNOME-compatible Ubuntu application that converts speech to text and inputs it into the current application as if typed on a keyboard.
 
-## Current Status ✅
+## Current Status
 
 **Version 0.1.0 - Alpha Release** - Fully functional speech-to-text application with GTK interface, real-time recognition, and smart text input.
 
 ## Features
 
-- 🎤 **Real-time speech recognition** using VOSK (offline, privacy-focused)
-- 🖱️ **GTK interface** with recording status button (green/red with animations)
-- 📝 **Smart text input** - Queues speech during recording, types all at once when stopped
-- 🔄 **Focus management** - Automatically returns focus to previous application
-- 🖼️ **Window positioning** - Stays on top, positioned at top-right corner
-- 🎨 **Visual feedback** - Color-coded status and real-time transcription display
-- ⚡ **Easy launch** - Desktop integration and smart launcher script
+- **Real-time speech recognition** using VOSK (offline, privacy-focused)
+- **GTK interface** with recording status button (green/red with animations)
+- **Smart text input** - Queues speech during recording, types all at once when stopped
+- **Focus management** - Automatically returns focus to previous application
+- **Window positioning** - Stays on top, positioned at top-right corner
+- **Visual feedback** - Color-coded status and real-time transcription display
+- **Easy launch** - Desktop integration and smart launcher script
 
 ## Quick Start
 
@@ -43,24 +50,24 @@ Or find "Speech-to-Text Agent" in your application menu.
 ### Usage
 
 1. **Launch the app** - It appears at top-right corner, stays on top
-2. **Click "Start Recording"** (🎤 button turns red)
+2. **Click "Start Recording"** (button turns red)
 3. **Speak into your microphone** - Real-time transcription shown in status
-4. **Click "Stop Recording"** (⏹️ button) 
+4. **Click "Stop Recording"** 
 5. **Text automatically types** into your previous application
 6. **Focus returns** to your work application
 
-## What's New 🚀
+## What's New
 
 See the [**CHANGELOG.md**](CHANGELOG.md) for detailed version history and recent improvements.
 
 ### Latest Features (v0.1.0)
-- ✅ Working VOSK speech recognition
-- ✅ GTK interface with animated status button
-- ✅ Smart text queuing and batch typing
-- ✅ Window positioning and stay-on-top
-- ✅ Desktop integration
-- ✅ Automated setup script
-- ✅ Focus management between applications
+- Working VOSK speech recognition
+- GTK interface with animated status button
+- Smart text queuing and batch typing
+- Window positioning and stay-on-top
+- Desktop integration
+- Automated setup script
+- Focus management between applications
 
 ## Requirements
 
@@ -156,7 +163,7 @@ speech-to-text-agent/
 ├── setup.sh                     # Automated dependency installer
 ├── requirements.txt              # Python dependencies
 ├── README.md                    # This documentation
-├── CHANGELOG.md                 # 📋 Version history and changes
+├── CHANGELOG.md                 # Version history and changes
 ├── TODO.md                     # Development roadmap
 ├── speech-to-text-agent.desktop  # Desktop entry
 ├── test-xdotool.sh             # xdotool functionality test
@@ -177,18 +184,18 @@ PYTHONPATH=./venv/lib/python3.13/site-packages python3 main.py
 
 ## Documentation
 
-- **[📋 CHANGELOG.md](CHANGELOG.md)** - Version history, new features, and bug fixes
-- **[📝 TODO.md](TODO.md)** - Development roadmap and planned features
-- **[🔧 setup.sh](setup.sh)** - Automated installation script
-- **[🚀 launch.sh](launch.sh)** - Smart application launcher
+- **[CHANGELOG.md](CHANGELOG.md)** - Version history, new features, and bug fixes
+- **[TODO.md](TODO.md)** - Development roadmap and planned features
+- **[setup.sh](setup.sh)** - Automated installation script
+- **[launch.sh](launch.sh)** - Smart application launcher
 
 ## Version History
 
 See the **[CHANGELOG.md](CHANGELOG.md)** for detailed release notes, including:
-- ✅ New features and improvements
-- 🐛 Bug fixes and patches  
-- 🔧 Technical changes and dependencies
-- ⚠️ Known issues and limitations
+- New features and improvements
+- Bug fixes and patches  
+- Technical changes and dependencies
+- Known issues and limitations
 
 ## License
 
@@ -200,13 +207,13 @@ Contributions welcome! Please see [TODO.md](TODO.md) for planned features and im
 
 ---
 
-## 🎉 Quick Summary
+## Quick Summary
 
 **Speech-to-Text Agent v0.1.0** is now fully functional:
-- ✅ Working speech recognition with VOSK
-- ✅ Beautiful GTK interface with status feedback  
-- ✅ Smart text input with focus management
-- ✅ Desktop integration and easy setup
-- ✅ Comprehensive documentation
+- Working speech recognition with VOSK
+- Beautiful GTK interface with status feedback  
+- Smart text input with focus management
+- Desktop integration and easy setup
+- Comprehensive documentation
 
 **Try it now:** `./setup.sh && ./launch.sh`
