@@ -156,6 +156,7 @@ echo -e "${GREEN}[6/6] Creating AppImage...${NC}"
 cd "$BUILD_DIR"
 APPIMAGE="$PROJECT_ROOT/Speech-to-Text-Agent-${APP_VERSION}-x86_64.AppImage"
 
+export ARCH=x86_64
 "$APPIMAGETOOL" --appimage-extract-and-run "$APP_DIR" "$APPIMAGE"
 
 echo
