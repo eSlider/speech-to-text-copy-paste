@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Speech-to-Text Agent
+Comment=Speech-to-text agent for Ubuntu GNOME
+Exec=/home/ano/projects/speech-to-text-agent/launch.sh
+Icon=audio-input-microphone
+Terminal=false
+StartupNotify=true
+Categories=Utility;AudioVideo;Audio;
+Keywords=speech;text,dictation,voice,recognition;
