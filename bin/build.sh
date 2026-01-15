@@ -30,7 +30,10 @@ mkdir -p "$BUILD_DIR"
 
 # Create AppDir structure
 APPDIR_PATH="$BUILD_DIR/$APP_DIR"
-mkdir -p "$APPDIR_PATH"{usr/bin,usr/share/applications,usr/share/icons/hicolor/256x256/apps,usr/lib}
+mkdir -p "$APPDIR_PATH/usr/bin"
+mkdir -p "$APPDIR_PATH/usr/share/applications"
+mkdir -p "$APPDIR_PATH/usr/share/icons/hicolor/256x256/apps"
+mkdir -p "$APPDIR_PATH/usr/lib"
 
 echo -e "${GREEN}[1/6] Copying application files...${NC}"
 
